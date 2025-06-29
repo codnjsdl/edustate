@@ -131,7 +131,7 @@ if submitted and emp_id and emp_name:
         st.markdown("### 📢 2025년 상반기 개강된 교육 과정 목록")
 
         display_df = (
-            completed_courses_df[["과정명", "추천 대상", "구분"]]
+            completed_courses_df[["과정명", "일정", "추천 대상", "구분"]]
             .dropna(subset=["과정명"])
             .reset_index(drop=True)
         )
